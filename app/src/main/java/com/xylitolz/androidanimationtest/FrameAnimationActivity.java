@@ -29,7 +29,6 @@ public class FrameAnimationActivity extends AppCompatActivity{
 
     private void init() {
         animContainer = findViewById(R.id.view_anim_container);
-
         animationDrawable = (AnimationDrawable) animContainer.getBackground();
     }
 
@@ -81,7 +80,7 @@ public class FrameAnimationActivity extends AppCompatActivity{
         animationDrawable.addFrame(getResources().getDrawable(R.mipmap.anim_frame_3),42);
         animationDrawable.addFrame(getResources().getDrawable(R.mipmap.anim_frame_2),42);
         animationDrawable.addFrame(getResources().getDrawable(R.mipmap.anim_frame_1),42);
-        animContainer.setBackgroundDrawable(animationDrawable);
+        animContainer.setBackgroundDrawable(animationDrawable);//将动画设置给view
     }
 
     public static void start(Context context) {
