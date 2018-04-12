@@ -36,4 +36,11 @@ public class MainActivity extends AppCompatActivity{
         FrameAnimationActivity.start(this);
     }
 
+    /**
+     * 属性动画演示
+     */
+    protected void propertyTest(View view) {
+        PropertyAnimatorActivity.start(this);
+    }
+
 }
