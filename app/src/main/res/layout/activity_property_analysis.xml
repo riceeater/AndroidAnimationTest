@@ -2,6 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
-
+              android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <RadioGroup
+        android:checkedButton="@id/rb_type_linear"
+        android:id="@+id/rg_interpolator_type"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_type_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linear"/>
+        <RadioButton
+            android:id="@+id/rb_type_accelerate_decelerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AccelerateDecelerate"/>
+        <RadioButton
+            android:id="@+id/rb_type_bounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bounce"/>
+    </RadioGroup>
+    <Button
+        android:onClick="valueAnalysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试ValueAnimator变化"/>
+    <ImageView
+        android:id="@+id/iv_container"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/test"/>
 </LinearLayout>

@@ -43,4 +43,10 @@ public class MainActivity extends AppCompatActivity{
         PropertyAnimatorActivity.start(this);
     }
 
+    /**
+     * 属性动画演示
+     */
+    protected void propertyAnalysis(View view) {
+        PropertyAnalysisActivity.start(this);
+    }
 }
