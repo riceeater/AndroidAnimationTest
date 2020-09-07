@@ -35,14 +35,14 @@ public class FrameAnimationActivity extends AppCompatActivity{
     /**
      * 开启动画
      */
-    protected void startAnim(View view) {
+    public void startAnim(View view) {
         animationDrawable.start();
     }
 
     /**
      * 停止动画
      */
-    protected void stopAnim(View view) {
+    public void stopAnim(View view) {
         animationDrawable.stop();
     }
 
@@ -50,7 +50,7 @@ public class FrameAnimationActivity extends AppCompatActivity{
      * 切换动画为java生成
      * @param view
      */
-    protected void switchJava(View view) {
+    public void switchJava(View view) {
         animationDrawable = new AnimationDrawable();
         animationDrawable.addFrame(getResources().getDrawable(R.mipmap.anim_frame_28),42);
         animationDrawable.addFrame(getResources().getDrawable(R.mipmap.anim_frame_27),42);

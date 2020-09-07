@@ -56,7 +56,7 @@ public class PropertyAnalysisActivity extends AppCompatActivity {
         });
     }
 
-    protected void valueAnalysis(View view) {
+    public void valueAnalysis(View view) {
         log = new StringBuilder("");
         switch (rgInterpolatorType.getCheckedRadioButtonId()) {
             case R.id.rb_type_linear:

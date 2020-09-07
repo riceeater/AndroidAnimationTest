@@ -154,7 +154,7 @@ public class PropertyAnimatorActivity extends AppCompatActivity {
     /**
      * ValueAnimator实现动画
      */
-    protected void valueAnimatorTest (View view) {
+    public void valueAnimatorTest (View view) {
         switch (rgAnimatorType.getCheckedRadioButtonId()) {
             case R.id.rb_type_alpha:
                 //alpha透明度动画
@@ -182,7 +182,7 @@ public class PropertyAnimatorActivity extends AppCompatActivity {
     /**
      * ObjectAnimator实现动画
      */
-    protected void objectAnimatorTest (View view) {
+    public void objectAnimatorTest (View view) {
         switch (rgAnimatorType.getCheckedRadioButtonId()) {
             case R.id.rb_type_alpha:
                 //alpha透明度动画
@@ -209,7 +209,7 @@ public class PropertyAnimatorActivity extends AppCompatActivity {
     /**
      * xml实现动画
      */
-    protected void xmlAnimatorTest (View view) {
+    public void xmlAnimatorTest (View view) {
         Animator animator = AnimatorInflater.loadAnimator(this,R.animator.animator_test);
         animator.setTarget(ivContainer);
         animator.start();

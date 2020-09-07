@@ -25,28 +25,28 @@ public class MainActivity extends AppCompatActivity{
     /**
      * Tween动画演示
      */
-    protected void tweenTest(View view) {
+    public void tweenTest(View view) {
         TweenAnimationActivity.start(this);
     }
 
     /**
      * Frame动画演示
      */
-    protected void frameTest(View view) {
+    public void frameTest(View view) {
         FrameAnimationActivity.start(this);
     }
 
     /**
      * 属性动画演示
      */
-    protected void propertyTest(View view) {
+    public void propertyTest(View view) {
         PropertyAnimatorActivity.start(this);
     }
 
     /**
      * 属性动画演示
      */
-    protected void propertyAnalysis(View view) {
+    public void propertyAnalysis(View view) {
         PropertyAnalysisActivity.start(this);
     }
 }

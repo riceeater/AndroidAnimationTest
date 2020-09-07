@@ -39,7 +39,7 @@ public class TweenAnimationActivity extends AppCompatActivity {
     /**
      * 使用xml实现渐隐效果
      */
-    protected void xmlAlpha(View view) {
+    public void xmlAlpha(View view) {
         animation = AnimationUtils.loadAnimation(this,R.anim.anim_alpha);
         ivTest.startAnimation(animation);
     }
@@ -47,7 +47,7 @@ public class TweenAnimationActivity extends AppCompatActivity {
     /**
      * 使用代码实现渐显效果
      */
-    protected void javaAlpha(View view) {
+    public void javaAlpha(View view) {
         animation = new AlphaAnimation(0.0f,1.0f);
         animation.setInterpolator(new AccelerateDecelerateInterpolator());
         animation.setDuration(500);
@@ -60,14 +60,14 @@ public class TweenAnimationActivity extends AppCompatActivity {
     /**
      * 使用xml实现逆时针旋转
      */
-    protected void xmlRotate(View view) {
+    public void xmlRotate(View view) {
         animation = AnimationUtils.loadAnimation(this,R.anim.anim_rotate);
         ivTest.startAnimation(animation);
     }
     /**
      * 使用xml实现顺时针旋转
      */
-    protected void javaRotate(View view) {
+    public void javaRotate(View view) {
         animation = new RotateAnimation(0,360,Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
         animation.setInterpolator(new AccelerateDecelerateInterpolator());
         animation.setDuration(500);
@@ -80,11 +80,11 @@ public class TweenAnimationActivity extends AppCompatActivity {
     /**
      * xml实现向右下平移
      */
-    protected void xmlTranslate(View view) {
+    public void xmlTranslate(View view) {
         animation = AnimationUtils.loadAnimation(this,R.anim.anim_translate);
         ivTest.startAnimation(animation);
     }
-    protected void javaTranslate(View view) {
+    public void javaTranslate(View view) {
         animation = new TranslateAnimation(Animation.RELATIVE_TO_SELF,0,Animation.RELATIVE_TO_SELF,-1.0f,
                 Animation.RELATIVE_TO_SELF,0,Animation.RELATIVE_TO_SELF,-0.5f);
         animation.setInterpolator(new AccelerateDecelerateInterpolator());
@@ -98,7 +98,7 @@ public class TweenAnimationActivity extends AppCompatActivity {
     /**
      * xml拉伸效果
      */
-    protected void xmlScale(View view) {
+    public void xmlScale(View view) {
         animation = AnimationUtils.loadAnimation(this,R.anim.anim_scale);
         ivTest.startAnimation(animation);
     }
@@ -106,7 +106,7 @@ public class TweenAnimationActivity extends AppCompatActivity {
     /**
      * java拉伸效果
      */
-    protected void javaScale(View view) {
+    public void javaScale(View view) {
         animation = new ScaleAnimation(1.0f,2.0f,1.0f,2.0f,
                 Animation.RELATIVE_TO_SELF,1,Animation.RELATIVE_TO_SELF,1);
         animation.setInterpolator(new AccelerateDecelerateInterpolator());
@@ -120,7 +120,7 @@ public class TweenAnimationActivity extends AppCompatActivity {
     /**
      * xml AnimationSet
      */
-    protected void xmlSet(View view) {
+    public void xmlSet(View view) {
         animation = AnimationUtils.loadAnimation(this,R.anim.anim_set);
         ivTest2.startAnimation(animation);
     }
@@ -128,7 +128,7 @@ public class TweenAnimationActivity extends AppCompatActivity {
     /**
      * java拉伸效果
      */
-    protected void javaSet(View view) {
+    public void javaSet(View view) {
         //显示动画
         AlphaAnimation alphaAnimation = new AlphaAnimation(0.0f,1.0f);
         alphaAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
